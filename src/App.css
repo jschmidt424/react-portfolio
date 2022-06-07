@@ -1,38 +1,50 @@
+@font-face {
+    font-family: 'AndroidAssassin';
+    src: local('AndroidAssassin'), url(./assets/fonts/AndroidAssassinItalic-eDDp.ttf)
+}
+
+@font-face {
+    font-family: 'Anton';
+    src: local('Anton'), url(./assets/fonts/Anton-Regular.ttf)
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: local('Source Sans Pro'), url(./assets/fonts/SourceSansPro-Black.ttf);
+}
+
+:root {
+    --sw-body-font: Source Sans Pro, sans-serif;
+    --sw-second-font: Anton, sans-serif;
+    --sw-accent-font: AndroidAssassin, sans-serif;
+    --sw-white: #fff;
+    --sw-black: #0d0d0d;
+    --sw-black-1: #181818;
+    --sw-grey: #272727;
+    --sw-grey-1: #3e3e3e;
+    --sw-grey-2: #636161;
+    --sw-grey-3: #7f828b;
+    --sw-grey-4: #979797;
+    --sw-green: #03b00c;
+    --sw-green-1: #036e08;
+    --sw-primary: #03b00c;
+    --sw-text-color: #fff;
+    --sw-text-color-inverse: #0d0d0d;
+    --sw-bg: #0d0d0d;
+    --sw-bg-inverse: #fff;
+    --sw-header-height: 75px;
+    --sw-header-height-mobile: 55px;
+    --sw-footer-height-mobile: 60px;
+    --sw-page-side-padding: 2%;
+    --sw-app-height: 100vh;
+    --sw-app-width: calc(100vw - 20px);
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    /* background-color: var(--sw-bg); */
+    background-image: url(./assets/images/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: var(--sw-app-height);
 }

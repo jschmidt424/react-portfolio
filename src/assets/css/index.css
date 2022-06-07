@@ -1,0 +1,123 @@
+/* landing */
+
+.landing {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.landing__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.landing__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing__content-name {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--sw-body-font);
+    font-size: 1.5rem;
+    color: var(--sw-black-1);
+    letter-spacing: 0.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.landing__content-name h1 {
+    flex-wrap: wrap;
+    line-height: 3rem;
+    margin-bottom: 0.3rem;
+}
+
+.landing__content-name h3 {
+    margin-top: 0.3rem;
+}
+
+.landing__buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    flex-shrink: 1;
+}
+
+.landing__buttons-item {
+    margin-right: 1.25rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: var(--sw-black-1);
+    text-decoration: none;
+    letter-spacing: 0.1rem;
+}
+
+/* Right Nav */
+
+.right-nav__container {
+    width: 40px;
+    position: fixed;
+    bottom: 0;
+    left: 40px;
+    right: auto;
+    z-index: 10;
+    color: var(--sw-black);
+}
+
+.social-list {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.social-list li a {
+    padding: 10px;
+}
+
+.social-list a {
+    display: inline-block;
+    text-decoration: none;
+    text-decoration-skip-ink: auto;
+    color: inherit;
+    position: relative;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.social-list a svg {
+    width: 20px;
+    height: 20px;
+}
+
+svg.feather {
+    fill: none;
+}
+
+svg {
+    vertical-align: middle;
+}
+
+.social-list::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 90px;
+    margin: 0px auto;
+    background-color: var(--sw-black);
+}
